@@ -21,6 +21,7 @@
 11. Swap two variables without using a temporary variable: To swap two variables a and b without using a temporary variable, you can use the XOR operator (^). For example, to swap a and b, you can do `a ^= b, b ^= a, a ^= b`.
 
 12. Finding the maximum or minimum of two numbers: To find the maximum of two numbers `a` and `b` use the expression, `b & ((a - b) >> 31) | a & (~(a - b) >> 31)`
+    
     Here's how it works:
 
     - `(a - b) >> 31` gives a 32-bit number with all bits set if a is less than b, and all bits unset otherwise.
